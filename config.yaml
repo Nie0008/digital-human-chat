@@ -1,0 +1,53 @@
+# 阿里云百炼API配置
+api:
+  dashscope_api_key: "" # 在此处填入您的阿里云百炼API密钥
+  dashscope_api_id: "" # 阿里云百炼ID
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-turbo" # 可选：qwen-turbo, qwen-plus, qwen-max, qwen-max-longcontext
+
+# 数字人配置
+avatar:
+  default: "Avatar1"
+  options:
+    - "Avatar1 (通义万相)"
+    - "Avatar2 (通义万相)"
+    - "Avatar3 (MuseV)"
+
+# TTS配置
+tts:
+  default_module: "CosyVoice"
+  options:
+    - "GPT-SoVits"
+    - "CosyVoice"
+  voices:
+    - "longxiaochun (CosyVoice)"
+    - "longwan (CosyVoice)"
+    - "longcheng (CosyVoice)"
+    - "longhua (CosyVoice)"
+    - "少女 (GPT-SoVits)"
+    - "女性 (GPT-SoVits)"
+    - "青年 (GPT-SoVits)"
+    - "男性 (GPT-SoVits)"
+
+# 对话配置
+chat:
+  modes:
+    - "单轮对话 (一次性回答问题)"
+    - "互动对话 (分多次回答问题)"
+  default_mode: "单轮对话 (一次性回答问题)"
+  chunk_size: 5
+
+# 知识库配置
+knowledge:
+  path: "./knowledge"
+  file_types:
+    - ".txt"
+    - ".md"
+    - ".pdf"
+
+# 模型参数
+model_params:
+  temperature: 0.7
+  max_tokens: 512
+  top_p: 0.9
+  knowledge_weight: 0.8
