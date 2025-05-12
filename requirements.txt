@@ -1,0 +1,42 @@
+# 基础依赖
+gradio>=4.0.0
+modelscope_studio>=0.5.0
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+diffusers>=0.20.0
+accelerate>=0.20.0
+opencv-python>=4.8.0
+soundfile>=0.12.0
+requests>=2.30.0
+imageio>=2.30.0
+imageio[ffmpeg]
+omegaconf>=2.0.0
+ffmpeg-python>=0.2.0
+moviepy>=1.0.0
+numpy>=1.22.0
+scipy>=1.10.0
+librosa>=0.9.0
+numba>=0.55.0
+tqdm>=4.60.0
+funasr>=1.0.0
+PyYAML>=6.0.0
+psutil>=5.9.0
+jieba>=0.42.0
+pydub>=0.25.0
+openai>=1.0.0
+fastapi[all]
+nltk
+pillow>=10.0.0
+
+# 阿里云百炼API
+dashscope==1.13.6
+
+# PDF解析依赖
+PyPDF2==3.0.1
+pdfplumber==0.10.3
+
+# 可选依赖（根据需要安装）
+# edge-tts==6.1.9
+# transformers==4.44.1
+# huggingface_hub==0.25.2
